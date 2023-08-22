@@ -13,7 +13,7 @@ b_y = np.array([4, 2])
 B_x = np.array([11,11])
 B_y = np.array([0,0])
 
-# англ. населённый пункт
+# название
 orders = ['order #1',
           'order #2']
 
@@ -35,3 +35,4 @@ for i in range(len(orders)):
   d.append((distance(vector_a[i])+distance(vector_b[i]-vector_a[i])+distance(vector_B[i]-vector_b[i])).round())
 print(d)
 print(pd.DataFrame({'distance': d}, index=orders).sort_values('distance'))
+print(data)
